@@ -653,7 +653,7 @@ Sites with heavy traffic work well with pull CDNs, as traffic is spread out more
 * [The differences between push and pull CDNs](http://www.travelblogadvice.com/technical/the-differences-between-push-and-pull-cdns/)
 * [Wikipedia](https://en.wikipedia.org/wiki/Content_delivery_network)
 
-## Load balancer
+## 로드 밸런서
 
 <p align="center">
   <img src="http://i.imgur.com/h81n9iK.png"/>
@@ -661,11 +661,10 @@ Sites with heavy traffic work well with pull CDNs, as traffic is spread out more
   <i><a href=http://horicky.blogspot.com/2010/10/scalable-system-design-patterns.html>Source: Scalable system design patterns</a></i>
 </p>
 
-Load balancers distribute incoming client requests to computing resources such as application servers and databases.  In each case, the load balancer returns the response from the computing resource to the appropriate client.  Load balancers are effective at:
-
-* Preventing requests from going to unhealthy servers
-* Preventing overloading resources
-* Helping eliminate single points of failure
+로드 밸런서는 들어오는 클라이언트의 요청들을 어플리케이션 서버와 데이터베이스와 같은 컴퓨팅 자원들로 분산합니다. 각각의 경우, 로드 밸런서는 그 컴퓨팅 자원들로부터의 응답을 적절한 클라이언트로 반환합니다. 로드 밸런서는 다음과 같은 경우들에 효과적입니다.  
+* 요청들이 unhealthy 서버들로 가는 것을 방지합니다.
+* 과부화되는 자원을 방지합니다.
+* 단일 장애점을 제거하는데 도움이 됩니다.
 
 Load balancers can be implemented with hardware (expensive) or with software such as HAProxy.
 
